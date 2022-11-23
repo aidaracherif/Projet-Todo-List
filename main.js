@@ -1,10 +1,10 @@
-const inputField = document.querySelector(".input-field textarea"),
+const searh = document.querySelector(".search .textarea"),
    todoLists = document.querySelector(".todoLists"),
    pendingNum = document.querySelector(".pending-num"),
    clearButton = document.querySelector(".clear-button");
 
-inputField.addEventListener("click" , (e) => {
-let inputVal = inputField.value.trim();
+   searh.addEventListener("click" , (e) => {
+let inputVal = searh.value.trim();
 
     if(e.key === "Enter" && inputVal > 0){
         console.log(inputVal);

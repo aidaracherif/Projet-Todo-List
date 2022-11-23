@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
-   
    <div class="container">
       <div class="todo">Todo List</div>
-      <div class="input-field">
-          <textarea placeholder="Rechercher une tache"></textarea>
-          <i class="uil uil-search note-icon"></i>
+      <div class="search">
+        <div>
+            <input class="textarea" type="text" placeholder="Rechercher une tache">
+            <i class="uil uil-search note-icon"></i>
+        </div>
+        
       </div>
       <ul class="todoLists">
           <li class="list">
@@ -27,10 +29,18 @@
             <span class="task">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, molestias. Quidem corrupti aspernatur unde explicabo?</span>
             <i class="uil uil-trash-alt"></i>
         </li>
+        <li class="list">
+            <input type="checkbox">
+            <span class="task">Faire des cours</span>
+            <i class="uil uil-trash-alt"></i>
+        </li>
       </ul>
-      <div class="pending-tasks">
-            <span>You have<span class="pending-num"> no </span>tasks pending.</span>
-            <button class="clear-button">Clear All</button>
+      <button class="btn">Vider la liste</button>
+      <div class="add">
+           <input type="text" class="ajout" placeholder="Ajouter une nouvelle tache">
+           <button class="clear-button">
+              <i class="uil uil-plus"></i>
+           </button>
       </div>
   </div>  
   
