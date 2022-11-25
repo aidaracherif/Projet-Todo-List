@@ -10,15 +10,16 @@
 </head>
 <body>
    <div class="container">
-      <div class="todo">Todo List</div>
-      <div class="search">
-        <div>
-            <input class="textarea" type="text" placeholder="Rechercher une tache">
-            <i class="uil uil-search note-icon"></i>
-        </div>
-        
+      <div class="todo">
+        Todo List
       </div>
-      <ul class="todoLists">
+      <div class="search">
+         <div>
+              <input class="textarea" type="text" placeholder="Rechercher une tache">
+              <button><i class="uil uil-search note-icon"></i></button>
+          </div>
+       </div>
+       <ul class="todoLists">
           <li class="list">
               <input type="checkbox">
               <span class="task">Renew gym membership</span>
@@ -36,12 +37,14 @@
         </li>
       </ul>
       <button class="btn">Vider la liste</button>
-      <div class="add">
-           <input type="text" class="ajout" placeholder="Ajouter une nouvelle tache">
-           <button class="clear-button">
-              <i class="uil uil-plus"></i>
-           </button>
-      </div>
+           <div class="add">
+              <input type="text" class="ajout" placeholder="Ajouter une nouvelle tache">
+              <div class="add-button">
+                 <button class="clear-button">
+                     <i class="uil uil-plus"></i>Add
+                 </button>
+             </div>
+          </div>
   </div>  
   
   <script src="main.js"> </script>
