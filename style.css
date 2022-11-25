@@ -55,20 +55,25 @@ body{
 }
 .search .note-icon{
     position: relative;
-    margin-top: 20px;
-    /*margin-left: 20px;*/
+    margin-left: 390px;
     right: 5.5%;
     /* pointer-events: none;* */
     font-size: 25px;
     color: #333;
-    /*background: #ccc;*/
-    padding: 4px 7px;
+    background: #ccc;
+    padding: 4px 12px;
+}
+.search .b .note-icon{
+    background:#4070f4
 }
 .search .textarea:focus ~ .note-icon{
     border-color: #4070f4;
 }
 .container .todoLists{
+    max-height: 380px;
+    overflow-y: auto;
     margin-top: 20px;
+    padding-right: 10px;
 }
 .todoLists .list{
     display: flex;
@@ -86,7 +91,7 @@ body{
     height: 16px;
     min-width: 16px;
     accent-color: #4070f4;
-    /*pointer-events: none;*/
+    pointer-events: none;
 }
 .list input:checked ~ .task{
     text-decoration: line-through;
